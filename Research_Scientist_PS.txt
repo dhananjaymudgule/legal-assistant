@@ -1,0 +1,26 @@
+Problem Statement
+Given the contract document contract_interview.docx and any LLM model of your choice(you should probably select the best available), Extract all possible occurrences of “Audit & Inspection Rights” clause. 
+ 
+The scope of the clause is limited to 
+ 
+{
+  "Audit and Inspection Rights": {
+    "key_clause_concepts": "The Audit and Inspection label extracts clause information where a party is granted the right to audit the other party. This includes, for example, the right to audit the books and records of the other party or inspect the premises of the other party.",
+    "expected_key_clause_feature": [
+      "The right of one party to audit the books and records of another party.",
+      " The right of one party to give or receive access to the books and records of another party.",
+      " The right to inspect or examine the premises, books, accounts, records, papers, or other specified items.",
+      " The obligation of one party to maintain or retain records, files, books, accounts, or papers for the purpose of audit or inspection.",
+      " The obligation of a party to follow certain procedures and rules with respect to conducting the audit."
+    ],
+    "exclude_clause_concepts": [
+      "Governmental and regulatory audits and inspections.",
+      "Inspection rights on the delivery of products specifically if they are related to acceptance testing.",
+      "Definitions for “auditor”."
+    ]
+  }
+ 
+Submission Format:
+An Excel sheet containing the field “Extracted Content” with the formatted output from models. Note we only want the outputs from the contract documents and wouldn’t want to have any extra text that would come out of these models. The Excel should be written by the program directly. We do not encourage copy pasting the outputs to the excel sheet.
+The solution will be evaluated on our extracted data.
+The Final submission  should  contain the  solution notebook and the excel sheet as specified in point 1.
